@@ -7,8 +7,8 @@ pub struct Config {
     pub age: u32,
 }
 
-impl Default for Config {
-    fn default() -> Self {
+impl Config {
+    pub fn example() -> Self {
         Self {
             name: "John".to_string(),
             age: 30,

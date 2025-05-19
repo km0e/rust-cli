@@ -6,7 +6,7 @@ mod config;
 fn main() {
     let args = arg::Cli::parse();
     if let arg::Which::FullConfig { extension } = args.command {
-        let config = config::Config::default();
+        let config = config::Config::example();
         println!(
             "{}",
             config
